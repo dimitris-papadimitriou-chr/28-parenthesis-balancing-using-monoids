@@ -16,6 +16,9 @@ export class Balance {
   }
 }
 
+export let toString = balance =>
+  `left:${balance.L},Right:${balance.R} is balanced:${balance.isBalanced()}`;
+
 export class BalanceMonoid implements monoid<Balance> {
   empty: Balance = Balance.Empty;
   concat(x: Balance, y: Balance): Balance {
