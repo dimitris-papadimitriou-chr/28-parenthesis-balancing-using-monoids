@@ -12,7 +12,7 @@ export class Balance {
     this.R = r;
   }
   isBalanced(): boolean {
-    return this.L == 0 && this.R == 0;
+    return this.L == Balance.Empty.L && this.R == Balance.Empty.R;
   }
 }
 
